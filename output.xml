@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-02T20:53:48.605193" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\12676\OneDrive\Documents\GitHub\hackathon\test1.robot">
+<test id="s1-t1" name="Open And Fill Application Form" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:48.968392" level="INFO">Opening browser 'Chrome' to base url 'https://boards.greenhouse.io/whatnot/jobs/4983690004'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-02T20:53:48.968392" elapsed="4.139662"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-02T20:53:53.108054" elapsed="0.137739"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-02T20:53:55.248255" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-02T20:53:53.247808" elapsed="2.000447"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="apply_button"]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.248255" elapsed="0.010513"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@id="main_fields"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.258768" elapsed="0.322646"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="main_fields"]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.581414" elapsed="0.000000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:55.597179" level="INFO">${inputEle} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5b9cb1aebbb6bb05ae1936e868bd8455", element="f.BFF9EA4E1BE4BB78712B2BFC3270F8F5.d.834C2C96A7947899381D472C8530065E.e.7")&gt;, &lt;selenium.webdrive...</msg>
+<var>${inputEle}</var>
+<arg>//*[@id="main_fields"]//input</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.581414" elapsed="0.015765"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:55.597179" level="INFO">Typing text 'Geeta' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="5b9cb1aebbb6bb05ae1936e868bd8455", element="f.BFF9EA4E1BE4BB78712B2BFC3270F8F5.d.834C2C96A7947899381D472C8530065E.e.7")&gt;'.</msg>
+<arg>${inputEle}[0]</arg>
+<arg>Geeta</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.597179" elapsed="0.154008"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:55.751187" level="INFO">Typing text 'Kukreja' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="5b9cb1aebbb6bb05ae1936e868bd8455", element="f.BFF9EA4E1BE4BB78712B2BFC3270F8F5.d.834C2C96A7947899381D472C8530065E.e.8")&gt;'.</msg>
+<arg>${inputEle}[1]</arg>
+<arg>Kukreja</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.751187" elapsed="0.103273"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:55.854460" level="INFO">Typing text 'gk457@drexel.edu' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="5b9cb1aebbb6bb05ae1936e868bd8455", element="f.BFF9EA4E1BE4BB78712B2BFC3270F8F5.d.834C2C96A7947899381D472C8530065E.e.9")&gt;'.</msg>
+<arg>${inputEle}[2]</arg>
+<arg>gk457@drexel.edu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.854460" elapsed="0.102649"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:55.957109" level="INFO">Typing text '9257918535' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="5b9cb1aebbb6bb05ae1936e868bd8455", element="f.BFF9EA4E1BE4BB78712B2BFC3270F8F5.d.834C2C96A7947899381D472C8530065E.e.10")&gt;'.</msg>
+<arg>${inputEle}[3]</arg>
+<arg>9257918535</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:55.957109" elapsed="0.093664"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-03-02T20:53:56.050773" level="INFO">Sending C:\Users\12676\Downloads\HW3 - HBS Case Study (1) to browser.</msg>
+<arg>xpath=//*[@id="resume_fieldset"]/div/div[3]/button[1]</arg>
+<arg>${file_path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-03-02T20:53:56.050773" elapsed="0.074294"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@id="custom_fields"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-02T20:53:56.125067" elapsed="0.305666"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="custom_fields"]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-02T20:53:56.431238" elapsed="0.013503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-02T20:54:06.445989" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-02T20:53:56.445527" elapsed="10.000462"/>
+</kw>
+<status status="PASS" start="2024-03-02T20:53:48.968392" elapsed="17.477597"/>
+</test>
+<status status="PASS" start="2024-03-02T20:53:48.611352" elapsed="17.834637"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

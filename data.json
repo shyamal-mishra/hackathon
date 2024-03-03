@@ -1,0 +1,26 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 30,
+        "location": "New York"
+    },
+    {
+        "name": "Alice Smith",
+        "email": "alice.smith@example.com",
+        "age": 25,
+        "location": "Los Angeles"
+    },
+    {
+        "name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "age": 35,
+        "location": "Chicago"
+    },
+    {
+        "name": "shyamal bro",
+        "email": "bob.johnson@example.com",
+        "age": 35,
+        "location": "Chicago"
+    }
+]
